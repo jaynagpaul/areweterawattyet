@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>areweterawattyet</title>
+    <meta
+      name="description"
+      content="Tracking hyperscaler AI power consumption, one absurdly large cluster at a time."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero">
+        <h1 data-text="Are We Terawatt Yet?">Are We Terawatt Yet?</h1>
+        <p class="subtitle">
+          The fuel of the intelligence age.
+        </p>
+
+
+        <section class="progress-card" aria-label="Power consumption progress toward one terawatt">
+          <div class="progress-topline">
+            <p class="progress-label">Progress to 1 TW</p>
+            <span class="progress-value" id="progress-value">— GW</span>
+          </div>
+          <div class="progress-bar" role="progressbar" aria-valuemin="1" aria-valuemax="1000" aria-valuenow="0" id="progress-bar">
+            <div class="progress-track"></div>
+            <div class="progress-fill" id="progress-fill"></div>
+            <div class="progress-tick progress-tick-one">
+              <div class="progress-tick-line"></div>
+            </div>
+            <div class="progress-tick progress-tick-ten">
+              <div class="progress-tick-line"></div>
+            </div>
+            <div class="progress-tick progress-tick-hundred">
+              <div class="progress-tick-line"></div>
+            </div>
+            <div class="progress-tick progress-tick-tw">
+              <div class="progress-tick-line"></div>
+            </div>
+            <div class="progress-marker" id="progress-marker">
+              <span class="progress-marker-dot"></span>
+            </div>
+          </div>
+          <div class="progress-scale">
+            <span class="scale-label scale-min">1 GW</span>
+            <span class="scale-label scale-ten">10 GW</span>
+            <span class="scale-label scale-hundred">100 GW</span>
+            <span class="scale-label scale-tw">1 TW</span>
+          </div>
+          <p class="progress-note" id="progress-note"></p>
+        </section>
+
+        <section class="plant-card" aria-label="Stylized power plant animation">
+          <!-- City skyline — deepest background -->
+          <div class="city-skyline">
+            <div class="cb c1"></div>
+            <div class="cb c2"></div>
+            <div class="cb c3"></div>
+            <div class="cb c4"></div>
+            <div class="cb c5"></div>
+            <div class="cb c6"></div>
+            <div class="cb c7"></div>
+            <div class="cb c8"></div>
+            <div class="cb c9"></div>
+            <div class="cb c10"></div>
+            <div class="cb c11"></div>
+            <div class="cb c12"></div>
+          </div>
+
+          <div class="sky-glow"></div>
+          <div class="sun-haze"></div>
+
+          <!-- Second wind turbine (left side) -->
+          <div class="turbine turbine-left">
+            <div class="turbine-mast"></div>
+            <div class="turbine-hub">
+              <span class="blade blade-a"></span>
+              <span class="blade blade-b"></span>
+              <span class="blade blade-c"></span>
+            </div>
+          </div>
+
+          <!-- Main turbine (right side) -->
+          <div class="turbine">
+            <div class="turbine-mast"></div>
+            <div class="turbine-hub">
+              <span class="blade blade-a"></span>
+              <span class="blade blade-b"></span>
+              <span class="blade blade-c"></span>
+            </div>
+          </div>
+
+          <!-- Solar panel array -->
+          <div class="solar-array">
+            <span class="panel"></span>
+            <span class="panel"></span>
+            <span class="panel"></span>
+            <span class="panel"></span>
+            <span class="panel"></span>
+            <span class="panel"></span>
+          </div>
+
+          <div class="smoke-stack smoke-stack-left">
+            <span class="smoke smoke-a"></span>
+            <span class="smoke smoke-b"></span>
+            <span class="smoke smoke-c"></span>
+          </div>
+          <div class="smoke-stack smoke-stack-right">
+            <span class="smoke smoke-d"></span>
+            <span class="smoke smoke-e"></span>
+            <span class="smoke smoke-f"></span>
+          </div>
+          <div class="plant-tower tower-left"></div>
+          <div class="plant-tower tower-right"></div>
+          <div class="plant-building"></div>
+          <!-- Data center annex -->
+          <div class="data-center"></div>
+          <div class="plant-ground"></div>
+        </section>
+
+        <section class="facts-card">
+          <p class="facts-kicker">What this means</p>
+          <div class="equivalence-label" id="equivalence-label"></div>
+          <div class="equivalence-value">
+            <span id="equivalence-number">0</span><span id="equivalence-unit"></span>
+          </div>
+          <p class="equivalence-explainer" id="equivalence-description"></p>
+          <div class="equivalence-progress">
+            <span id="equivalence-index">01</span>
+            <div class="equivalence-progress-bar"><div id="equivalence-progress-fill"></div></div>
+          </div>
+        </section>
+
+        <p class="source-note">
+          Data: <a href="https://epoch.ai" target="_blank" rel="noreferrer">Epoch AI</a>. Visualization based on Epoch AI estimates of AI chip ownership and cumulative chip power over time.
+        </p>
+      </section>
+    </main>
+
+    <script src="./script.js" type="module"></script>
+  </body>
+</html>
