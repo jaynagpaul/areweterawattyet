@@ -473,7 +473,7 @@ function renderProgressBar(facilityGw) {
   valueEl.textContent = `${gwFormatted} GW`;
 
   const remaining = TARGET_GW - facilityGw;
-  noteEl.textContent = `${formatNumber(remaining, 0)} GW away from one terawatt — a milestone no single grid operator has crossed.`;
+  noteEl.textContent = `${formatNumber(remaining, 0)} GW away from one terawatt powering the research and deployment of superintelligence.`;
 }
 
 function populateHeadline(snapshot) {
